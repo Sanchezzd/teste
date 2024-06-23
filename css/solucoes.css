@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #f5f5f5; /* Cor de fundo */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+/* Estilização da barra de navegação */
+
+/* Estilo padrão da navbar */
+/* Estilo padrão da navbar */
+.navbar {
+    background-color: #fff; /* ou outra cor que você prefira */
+    transition: background-color 0.3s;
+}
+
+/* Estilo transparente da navbar */
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0.8); /* Ajuste a opacidade conforme necessário */
+}
+
+
+/* Estilo transparente da navbar */
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0.8); /* Ajuste a opacidade conforme necessário */
+}
+
+
+.navbar1 {
+    background-color: #f8f9fa;
+}
+
+.toggle {
+    color: #f5f5f5;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #000000; /* Cor de fundo da barra de navegação */
+    position: fixed; /* Torna a navegação fixa */
+    top: 0; /* Fixa no topo da página */
+    width: 100%; /* Largura total */
+    z-index: 9999; /* Alta prioridade para ficar sobre outros elementos */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 50px; /* Tamanho da logo */
+    margin-right: 10px; /* Espaço entre a logo e o texto */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    color: #fff !important; /* Cor dos links */
+    padding: 10px;
+}
+
+.nav-link:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px;
+}
+
+.navbar11 {
+    color: #fff;
+    margin: 0;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para as seções */
+  section {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 40px 20px;
+    text-align: center; /* Centraliza o conteúdo das seções */
+  }
+  
+.SEO {
+    padding-top: 50PX;
+}
+
+  /* Estilo para os containers brancos */
+  .container1 {
+    background-color: white;
+    border-radius: 20px 0 0 0;
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+  
+  /* Estilo para os h2 */
+  h2 {
+    font-size: 2em; /* Tamanho maior */
+    border-bottom: 2px solid #007bff; /* Borda azul conforme solicitado */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px; /* Espaço abaixo do h2 */
+    text-transform: uppercase; /* Transforma texto em maiúsculas */
+  }
+  
+  /* Estilo para os h3 */
+  h3 {
+    font-weight: bold;
+    font-size: 1.2em; /* Tamanho menor que h2 */
+    margin-top: 20px; /* Espaçamento entre h3 e o conteúdo */
+  }
+  
+  /* Estilo para o botão */
+  button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: #007bff;
+  }
+  
+  /* Estilo para o rodapé */
+  footer {
+    background-color: #f8f9fa; /* Cor de fundo do rodapé */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Estilo para a navegação */
+  .navbar1 {
+    background-color: #007bff; /* Cor de fundo da barra de navegação */
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar-brand img {
+    height: 40px; /* Altura do logo */
+    margin-right: 10px;
+  }
+  
+  .navbar11 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+    margin-left: 20px;
+    font-size: 1.2em;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f0f0f0; /* Cor de hover */
+  }
+  
+  /* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para as seções */
+  .section {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 40px 20px;
+    text-align: center; /* Centraliza o conteúdo das seções */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Desce 20px para criar efeito de entrada */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transições suaves */
+  }
+  
+  /* Estilo para as seções que já foram animadas (visíveis) */
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Estilo para os containers brancos */
+  .container1 {
+    background-color: white;
+    border-radius: 20px 0 20px 0;
+    padding: 20px;
+  }
+  
+  /* Estilo para os h2 */
+  h2 {
+    font-size: 2em; /* Tamanho maior */
+    border-bottom: 2px solid #007bff; /* Borda azul conforme solicitado */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px; /* Espaço abaixo do h2 */
+    text-transform: uppercase; /* Transforma texto em maiúsculas */
+  }
+  
+  /* Estilo para os h3 */
+  h3 {
+    font-weight: bold;
+    font-size: 1.2em; /* Tamanho menor que h2 */
+    margin-top: 20px; /* Espaçamento entre h3 e o conteúdo */
+  }
+  
+  /* Estilo para o botão */
+  button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: #007bff;
+  }
+  
+  /* Estilo para o rodapé */
+  footer {
+    background-color: #f8f9fa; /* Cor de fundo do rodapé */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Estilo para a navegação */
+  .navbar1 {
+    background-color: #007bff; /* Cor de fundo da barra de navegação */
+    color: white;
+    padding: 10px 0;
+  }
+  
+.NOVO {
+        margin-bottom: 25px;
+}
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar-brand img {
+    height: 40px; /* Altura do logo */
+    margin-right: 10px;
+  }
+  
+  .navbar11 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+    margin-left: 20px;
+    font-size: 1.2em;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f0f0f0; /* Cor de hover */
+  }

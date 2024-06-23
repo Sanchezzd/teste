@@ -1,75 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soluções | Singular ecommerce</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/solucoes.css">
-        <!-- Incluindo o CSS do Bootstrap 5.3.3 -->
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous"
-      />
-  </head>
-  <body>
-    <header class="navbar1">
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="img/Foto IG.webp"
-              alt="Logo"
-              class="d-inline-block align-text-top"
-              id="navbar-logo"
-            />
-            <h1 class="navbar11">SINGULAR ECOMMERCE</h1>
-          </a>
-          <button
-            class="toggle navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="toggle navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Soluções</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contato.html">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contato.html">Contato</a>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluções | Singular ecommerce</title>
+  <link rel="stylesheet" href="css/solucoes.css">
+  <!-- Incluindo o CSS do Bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <style>
+    /* Estilo para as seções que já foram animadas (visíveis) */
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  <script>
+    // Função para verificar quando a seção está visível
+    function isVisible(element) {
+      const position = element.getBoundingClientRect();
+      return position.top < window.innerHeight * 0.75 && position.bottom >= 0;
+    }
+
+    // Função para adicionar classe 'visible' às seções visíveis
+    function showVisibleSections() {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        if (isVisible(section)) {
+          section.classList.add('visible');
+        }
+      });
+    }
+
+    // Evento para verificar quando o usuário rolar a página
+    document.addEventListener('scroll', showVisibleSections);
+    document.addEventListener('resize', showVisibleSections);
+    document.addEventListener('DOMContentLoaded', showVisibleSections);
+  </script>
+</head>
+<body>
+  <header class="navbar1">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Foto IG.webp" alt="Logo" class="d-inline-block align-text-top">
+          <h1 class="navbar11">SINGULAR ECOMMERCE</h1>
+        </a>
+        <button class="toggle navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggle navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Soluções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Rodapé -->
-    <footer class="text-center py-4">
-      <p>&copy; 2024 Singular E-commerce. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Seção 1 -->
+  <section class="section">
+    <h2 class="SEO">Aceleração das Vendas</h2>
+    <div class="container1">
+      <h3>O Que Fazemos?</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, sint tempora? Doloremque explicabo adipisci, ullam qui provident magnam voluptas, asperiores, culpa esse maxime dicta obcaecati nesciunt molestias! Praesentium, commodi et.</p>
+      <h3>O que inclui essa aceleração de e-commerce?</h3>
+      <ul>
+        <li>Primeiramente, nossa equipe cuida da gestão dos principais canais de tráfego pago (Facebook Ads, Google Ads, Linkedin Ads, Tik Tok Ads), focada em desempenho excepcional.</li>
+        <li>Realizamos uma análise completa, tanto on-site quanto off-site, identificando oportunidades e aplicando estratégias para aumentar a taxa de conversão (CRO). A experiência do usuário (UX) é uma prioridade em todas as etapas da jornada do usuário, do processo de compra até o pós-venda, assegurando uma experiência incrível, simples e fácil.</li>
+        <li>Para manter você atualizado e alinhado com nossos progressos, organizamos encontros online para apresentação de resultados. Além disso, todos os relatórios gerenciais são personalizados e você tem acesso ao Business Intelligence (BI) para um acompanhamento detalhado.</li>
+        <li>Com nossa abordagem abrangente e personalizada, você verá um crescimento tangível nas vendas e na lucratividade de seu e-commerce. Estamos comprometidos em acelerar seu sucesso no mundo digital.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Scripts do Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Seção 2 -->
+  <section class="section">
+    <h2>E-mail Marketing</h2>
+    <div class="container1">
+      <h3>O Que Fazemos?</h3>
+      <p>Quando se trata de geração de leads, nossa abordagem é centrada em entender a dor de não ter leads qualificados. Nós criamos conteúdo e mensagens que se conectam diretamente com seu público-alvo, mapeando seu cenário e aplicando estratégias que alcancem seus interesses. Desenvolvemos um plano de ação sob medida, direcionado para atrair leads de alta qualidade que se convertem em clientes reais. Com nossas estratégias de geração de leads, sua empresa estará pronta para um crescimento constante e sustentável.</p>
+      <h3>O que inclui nossa estratégia de e-mail marketing?</h3>
+      <ul>
+        <li>Taxa de Entrega Aprimorada: Garantimos que seus e-mails alcancem a caixa de entrada certa, evitando armadilhas de spam e melhorando a entrega.</li>
+        <li>Taxa de Abertura Otimizada: Criamos títulos de e-mails envolventes e estratégias de segmentação para aumentar a taxa de abertura.</li>
+        <li>Taxa de Cliques Aumentada: Nossos e-mails são projetados com apelo visual e chamadas à ação persuasivas para estimular cliques.</li>
+        <li>Taxa de Conversão Aumentada: Fornecemos conteúdo personalizado e relevante para guiar os leads ao longo do funil de vendas.</li>
+        <li>Retorno sobre Investimento (ROI) Maximizado: Acompanhamos de perto as métricas de ROI para garantir que cada campanha seja rentável.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Seção 3 -->
+  <section class="section">
+    <h2>SEO</h2>
+    <div class="container1 NOVO">
+      <h3>O Que Fazemos?</h3>
+      <p>Utilizamos técnicas de SEO avançadas para elevar o posicionamento de sua marca nos mecanismos de busca. Aparecer nas primeiras posições é essencial para direcionar um público maior para o seu site, aumentando as chances de conversão. Nossa abordagem inclui otimização de palavras-chave, estratégias de conteúdo e otimização técnica, garantindo que sua empresa seja encontrada por aqueles que procuram seus produtos ou serviços. Com nosso foco em SEO, você aumentará sua presença online e expandirá seu alcance de maneira significativa.</p>
+    </div>
+    <button>Preencha o formulário</button>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-center py-4">
+    <p>&copy; 2024 Singular E-commerce. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
