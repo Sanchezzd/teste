@@ -1,3 +1,4 @@
+
 // Recorrer los elementos y hacer que onchange ejecute una funcion para comprobar el valor de ese input
 (function(){
 
@@ -86,3 +87,26 @@ window.addEventListener('scroll', function() {
     header.classList.toggle('scrolled', window.scrollY > 50);
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleciona todos os elementos com a classe .hoverable
+    var hoverableElements = document.querySelectorAll(".hoverable");
+  
+    // Itera sobre cada elemento .hoverable
+    hoverableElements.forEach(function(element) {
+      // Adiciona evento para quando o mouse entra no elemento
+      element.addEventListener("mouseenter", function() {
+        // Adiciona a classe que aumenta o tamanho do texto
+        this.classList.add("hover-effect");
+      });
+  
+      // Adiciona evento para quando o mouse sai do elemento
+      element.addEventListener("mouseleave", function() {
+        // Remove a classe para voltar ao tamanho padrão
+        this.classList.remove("hover-effect");
+      });
+    });
+  });
+
+
+  

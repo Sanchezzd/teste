@@ -85,52 +85,62 @@
       </div>
     </section>
 
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Exemplo de Aumento de Fonte com Hover</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    
     <!-- Seção de informações adicionais -->
     <section class="section2">
       <div class="container text-center text-md-start">
         <div class="row row-cols-1 row-cols-md-2">
           <!-- Coluna da direita -->
           <div id="oquesuaempresa" class="col direita oquesuaempresa">
-            <h2 id="oquesuaempresa">
+            <h2 id="oque" class="oque hoverable">
               O que sua<br />
               empresa vai<br />encontrar
             </h2>
           </div>
           <!-- Coluna da esquerda com informações -->
           <div id="h01" class="col">
-            <div id="h01" class="h01">
-              <h2>01</h2>
-              <p id="suporte">
+            <div class="h01 hoverable">
+              <h2 class="h2-custom">01</h2>
+              <p class="p-custom">
                 Suporte especializado em SEO,<br />e-mail marketing e mídia
                 paga.
               </p>
             </div>
-            <div class="h02">
-              <h2>02</h2>
-              <p id="suporte">
+            <div class="h02 hoverable">
+              <h2 class="h2-custom">02</h2>
+              <p class="p-custom">
                 Nossa abordagem é diferente das agencias tradicionais.<br />
                 Priorizamos o relacionamento, <br />
                 construindo parceirias duradouras para o seu sucesso.
               </p>
             </div>
-            <div class="h03">
-              <h2>03</h2>
-              <p id="suporte">
+            <div class="h03 hoverable">
+              <h2 class="h2-custom">03</h2>
+              <p class="p-custom">
                 Não somos apenas mais uma <br />
                 agência, somos seu parceiro estratégico.
               </p>
             </div>
-            <div class="h04">
-              <h2>04</h2>
-              <p id="suporte">
+            <div class="h04 hoverable">
+              <h2 class="h2-custom">04</h2>
+              <p class="p-custom">
                 Nossa abordagem é diferente das agencias tradicionais.<br />
                 Priorizamos o relacionamento, <br />
                 construindo parceirias duradouras para o seu sucesso.
               </p>
             </div>
-            <div class="h05">
-              <h2>05</h2>
-              <p id="suporte">
+            <div class="h05 hoverable">
+              <h2 class="h2-custom">05</h2>
+              <p class="p-custom">
                 Não somos apenas mais uma <br />
                 agência, somos seu parceiro estratégico.
               </p>
@@ -139,6 +149,11 @@
         </div>
       </div>
     </section>
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
 
     <!-- Seção "O que fazemos" -->
     <section class="oquefazemos">
@@ -161,31 +176,50 @@
           </div>
           <!-- Informações da direita -->
           <div class="col-md-6">
-            <h2 class="titulo5">Aumente suas vendas</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-              hic eos autem unde, quo ut! Numquam molestias tempora fugit
-              maiores aliquid labore unde minus nulla, maxime, ea quibusdam?
-              Voluptate, cum.
-            </p>
-            <h2 class="titulo6">E-mail Marketing</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-              hic eos autem unde, quo ut! Numquam molestias tempora fugit
-              maiores aliquid labore unde minus nulla, maxime, ea quibusdam?
-              Voluptate, cum.
-            </p>
-            <h2 class="titulo7">Visibilidade e Posicionamento</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-              hic eos autem unde, quo ut! Numquam molestias tempora fugit
-              maiores aliquid labore unde minus nulla, maxime, ea quibusdam?
-              Voluptate, cum.
-            </p>
-            <div class="teste"><button class="saiba">Saiba +</button></div>
-          </div>
+            <div class="esse">
+                <h2 class="titulo5" onmouseover="exibirParagrafo('paragrafo1')" onmouseleave="ocultarParagrafo('paragrafo1')" onmouseenter="mudarCorIcone('icone1')" onmouseleave="restaurarCorIcone('icone1')">Aumente suas vendas</h2>
+                <p style="font-size: 35px;" class="nesse" onmouseover="exibirParagrafo('paragrafo1')" onmouseleave="ocultarParagrafo('paragrafo1')" id="icone1">+</p>
+            </div>
+            <div class="paragrafo-container">
+                <p class="teste paragrafo" id="paragrafo1">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
+                    hic eos autem unde, quo ut! Numquam molestias tempora fugit
+                    maiores aliquid labore unde minus nulla, maxime, ea quibusdam?
+                    Voluptate, cum.
+                </p>
+                <div class="borda-animada"></div> <!-- Borda animada -->
+            </div>
+            
+            <div class="esse">
+                <h2 class="titulo5" onmouseover="exibirParagrafo('paragrafo2')" onmouseleave="ocultarParagrafo('paragrafo2')" onmouseenter="mudarCorIcone('icone2')" onmouseleave="restaurarCorIcone('icone2')">Aumente suas vendas</h2>
+                <p style="font-size: 35px;" class="nesse" onmouseover="exibirParagrafo('paragrafo2')" onmouseleave="ocultarParagrafo('paragrafo2')" id="icone2">+</p>
+            </div>
+            <div class="paragrafo-container">
+                <p class="teste paragrafo" id="paragrafo2">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
+                    hic eos autem unde, quo ut! Numquam molestias tempora fugit
+                    maiores aliquid labore unde minus nulla, maxime, ea quibusdam?
+                    Voluptate, cum.
+                </p>
+                <div class="borda-animada"></div> <!-- Borda animada -->
+            </div>
+            
+            <div class="esse">
+                <h2 class="titulo5" onmouseover="exibirParagrafo('paragrafo3')" onmouseleave="ocultarParagrafo('paragrafo3')" onmouseenter="mudarCorIcone('icone3')" onmouseleave="restaurarCorIcone('icone3')">Aumente suas vendas</h2>
+                <p style="font-size: 35px;" class="nesse" onmouseover="exibirParagrafo('paragrafo3')" onmouseleave="ocultarParagrafo('paragrafo3')" id="icone3">+</p>
+            </div>
+            <div class="paragrafo-container">
+                <p class="teste paragrafo" id="paragrafo3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
+                    hic eos autem unde, quo ut! Numquam molestias tempora fugit
+                    maiores aliquid labore unde minus nulla, maxime, ea quibusdam?
+                    Voluptate, cum.
+                </p>
+                <div class="borda-animada"></div> <!-- Borda animada -->
+            </div>
+            
+            <div><button class="saiba">Saiba +</button></div>
         </div>
-      </div>
     </section>
 
     <!-- Seção de diferencial -->
@@ -318,5 +352,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
+    <script src="js/teste.js"></script>
   </body>
 </html>
